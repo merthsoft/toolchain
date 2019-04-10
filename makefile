@@ -117,7 +117,6 @@ clean: $(addprefix clean-,$(LIBRARIES)) clean-ce clean-std clean-startup
 #----------------------------
 # tool rules
 #----------------------------
-$(FASMG_EZ80): $(FASMG)
 $(FASMG):
 	$(MAKE) -C $(FASMGDIR)
 $(CONVBIN):
