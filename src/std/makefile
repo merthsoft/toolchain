@@ -22,7 +22,7 @@ BIN        ?= $(PREFIX)/CEdev/bin
 
 LIB_LOC    := $(DESTDIR)$(DEV)/lib
 LOC_H      := $(DESTDIR)$(DEV)/include
-LIB_H       = $(wildcard *.h)
+LIB_H       = $(wildcard *.h *.hpp)
 
 # windows is trash at copying files, so just do it manually
 ifeq ($(OS),Windows_NT)
